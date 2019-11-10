@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Code View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="QRcode" id="BYZ-38-t0r" customClass="QRCodeViewController" customModule="QRcodeOpen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSC-10-pXF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="580"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="0.14557470034246575" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QRCode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="414" translatesAutoresizingMaskIntoConstraints="NO" id="Scq-vV-1rw">
+                                <rect key="frame" x="0.0" y="632" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.20258989726027396" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8gY-kr-HDB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSe-10-jOr">
+                                <rect key="frame" x="132" y="690" width="150" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3yC-ug-heN"/>
+                                    <constraint firstAttribute="width" constant="150" id="ezK-Uu-zOg"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="lVA-w4-lYd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="uCQ-BP-Xwq"/>
+                                </constraints>
+                                <state key="normal" title="Go Web !">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="openWebButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfk-Hg-we1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi0-EP-Z9L">
+                                <rect key="frame" x="314" y="695.5" width="50" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44.5" id="2HI-3d-2m9"/>
+                                    <constraint firstAttribute="width" constant="50" id="F9B-Dg-S8x"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="photo.fill.on.rectangle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanAlbumButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E7R-a3-gti"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3g-25-R22">
+                                <rect key="frame" x="29" y="690" width="81" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Clear QRCode"/>
+                                <connections>
+                                    <action selector="removeQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHe-Yn-YkM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NSC-10-pXF" secondAttribute="trailing" id="6ud-mY-LBl"/>
+                            <constraint firstItem="NSC-10-pXF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CqZ-a0-NW3"/>
+                            <constraint firstItem="g3g-25-R22" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="EPq-aX-sof"/>
+                            <constraint firstItem="Scq-vV-1rw" firstAttribute="trailing" secondItem="NSC-10-pXF" secondAttribute="trailing" id="JNR-T1-aYZ"/>
+                            <constraint firstItem="zi0-EP-Z9L" firstAttribute="bottom" secondItem="eSe-10-jOr" secondAttribute="bottom" id="Kfp-jZ-7R1"/>
+                            <constraint firstItem="eSe-10-jOr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="646" id="Tz3-28-5tx"/>
+                            <constraint firstItem="NSC-10-pXF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZKk-7F-TSS"/>
+                            <constraint firstItem="Scq-vV-1rw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dZ4-0q-lRU"/>
+                            <constraint firstAttribute="bottom" secondItem="Scq-vV-1rw" secondAttribute="bottom" constant="214" id="fvk-Jk-SIn"/>
+                            <constraint firstItem="g3g-25-R22" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="646" id="jWG-JM-r1l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zi0-EP-Z9L" secondAttribute="trailing" constant="50" id="mPp-jZ-ZHI"/>
+                            <constraint firstItem="Scq-vV-1rw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="588" id="muP-Z3-rTn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eSe-10-jOr" secondAttribute="bottom" constant="122" id="ns5-cV-njb"/>
+                            <constraint firstItem="Scq-vV-1rw" firstAttribute="leading" secondItem="NSC-10-pXF" secondAttribute="leading" id="qG0-rt-fwL"/>
+                            <constraint firstItem="Scq-vV-1rw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s6r-bY-dfB"/>
+                            <constraint firstItem="eSe-10-jOr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yCf-Z6-Q0g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NSC-10-pXF" secondAttribute="bottom" constant="238" id="ylw-dd-Ace"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumButton" destination="zi0-EP-Z9L" id="tET-Ao-afT"/>
+                        <outlet property="camView" destination="NSC-10-pXF" id="xci-dc-4LD"/>
+                        <outlet property="codeTextLabel" destination="Scq-vV-1rw" id="33m-z3-DOJ"/>
+                        <outlet property="webButton" destination="eSe-10-jOr" id="C9D-OQ-zw4"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo.fill.on.rectangle.fill" catalog="system" width="64" height="48"/>
+    </resources>
+</document>
